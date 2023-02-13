@@ -1,0 +1,110 @@
+.education {
+    padding-top: 65px;
+    background: $white-300;
+    min-height: 100vh;
+
+    h4 {
+        font-size: 2rem;
+        color: $green-100;
+        text-align: left;
+        margin: 1rem;
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+    }
+
+    .box-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            height: 250px;
+            border-radius: 0.5rem;
+            box-shadow: 0.2rem 0.5rem 1rem rgba($black-100, 0.2);
+            text-align: center;
+            position: relative;
+            margin-top: 2rem;
+            overflow: hidden;
+            transition: 0.3s;
+            background: $white-100;
+
+            &:hover {
+                transform: scale(1.03);
+                box-shadow: 1rem 0.5rem 1.2rem rgba($black-100, 0.3);
+            }
+
+            .image {
+                flex: 1 1 20rem;
+                width: 100%;
+
+                img {
+                    object-fit: cover;
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .content {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                flex-wrap: wrap;
+                flex: 1 1 70rem;
+
+                h3 {
+                    font-size: 2.5rem;
+                    color: $blue-400;
+                    padding: 0.5rem 0;
+                    font-weight: 600;
+                    text-align: left;
+                    margin-left: 1rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                    margin-left: 1rem;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .education {
+
+        .box-container {
+
+            .box {
+                flex-direction: column;
+                width: 80%;
+                height: auto;
+
+                .image {
+                    width: 100%;
+                    height: 25rem;
+
+                    img {
+                       width: 100%;
+                    }
+                }
+
+                .content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    flex-wrap: wrap;
+                    flex: 0;
+                }
+            }
+        }
+    }
+}

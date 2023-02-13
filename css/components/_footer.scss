@@ -1,0 +1,119 @@
+.footer {
+    min-height: auto;
+    padding-top: 0;
+    background: $black-200;
+
+    .box-container {
+        max-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .box {
+            flex: 1 1 25rem;
+            margin: 2.5rem;
+
+            h3 {
+                font-size: 2.5rem;
+                color: $white-100;
+                padding-bottom: 1rem;
+                font-weight: normal;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: $white-400;
+                padding: 0.7rem 0;
+                text-transform: none;
+
+                i {
+                    padding-right: 1rem;
+                    color: $orange-100;
+                }
+            }
+
+            a {
+                font-size: 1.5rem;
+                color: $white-400;
+                padding: 0.3rem 0;
+                display: block;
+                text-transform: lowercase;
+
+                &:hover {
+                    color: $orange-100;
+                }
+            }
+
+            .share {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1rem 0;
+
+                a {
+                    height: 4rem;
+                    width: 4rem;
+                    padding: 1rem;
+                    text-align: center;
+                    border-radius: 5rem;
+                    font-size: 1.7rem;
+                    margin-right: 1rem;
+                    transition: 0.2s;
+                    background: $white-400;
+                    color: $blue-500;
+                    border: none;
+
+                    &:hover {
+                        background: transparent;
+                        transform: scale(0.98);
+                        border: 0.1rem solid $white-500;
+                        color: $white-400;
+                    }
+                }
+            }
+        }
+    }
+
+    .credit {
+        padding: 1rem 0 0 0;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Nunito", sans-serif;
+        font-weight: 600;
+        color: $white-100;
+        border-top: 0.1rem solid $gray-400;
+
+        a {
+            color: $orange-100;
+        }
+    }
+}
+
+  @keyframes pound {
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 450px) {
+    .footer {
+
+        .box-container {
+
+            .box {
+                margin: 1.5rem;
+
+                p {
+                  padding: 0.7rem;
+                }
+
+                .share {
+                    
+                    a {
+                        padding: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

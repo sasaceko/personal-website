@@ -1,0 +1,47 @@
+.social {
+    position: relative;
+    margin-top: 9rem;
+
+    &__icons {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        li {
+            display: inline-block;
+            margin-bottom: 14px;
+        }
+
+        a {
+            font-size: 2rem;
+            display: inline-block;
+            line-height: 44px;
+            color: $blue-700;
+            background-color: $purple-100;
+            width: 44px;
+            height: 44px;
+            text-align: center;
+            margin-right: 8px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s linear;
+            -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+
+            &:active, &:focus, &:hover {
+                color: $white-100;
+            }
+
+            &.linkedin {
+                &:hover {
+                    background-color: $blue-800;
+                }
+            }
+
+            &.github {
+                &:hover {
+                    background-color: $black-300;
+                }
+            }
+        }
+    }
+}

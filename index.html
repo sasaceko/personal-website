@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Saša Čeko</title>
+    <script src="https://kit.fontawesome.com/6c6c341e2b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="/#home" class="logo" title="home">
+            <img src="images/logo.png" alt="logo" />
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div id="particles-js"></div>
+            <section class="content">
+                <h1>Hi There,<br/> I'm Saša Čeko</h1>
+                <p>I Am A <span class="typing-text">Web Developer</span></p>
+                <a href="#about" class="btn"><span>About Me</span><i class="fas fa-arrow-circle-down"></i></a>
+                <section class="social">
+                    <ul class="social__icons">
+                        <li><a class="linkedin" aria-label="LinkedIn" href="https://hr.linkedin.com/in/sa%C5%A1a-%C4%8Deko-441154182" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a></li> 
+                        <li><a class="github" aria-label="GitHub" href="https://github.com/sasaceko" target="_blank" rel="noopener"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="image">
+                <img src="images/hero.png" alt="Head image" />
+            </section>
+        </section>
+        <section class="about" id="about">
+            <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+                <div class="row">
+                    <div class="image">
+                        <img draggable="false" class="tilt" src="images/hero.png" alt="">
+                     </div>  
+                    <article class="content">
+                        <h3>I'm Saša</h3>
+                        <span class="tag">Web Developer</span>
+                        <p>I'm a junior Web Developer with a six months experience in web developing and a year in a web editing. In my free time I am currently attending adult education for Frontend Developer at Algebra University College. </p>
+                        <div class="box-container">
+                            <div class="box">
+                                <p><span> email: </span> ceko.sasa@gmail.com</p>
+                                <p><span> place: </span> Varaždin, Croatia</p>
+                            </div>
+                        </div>
+                        <div class="resumebtn">
+                            <a href="files/sasa-ceko-cv.pdf" class="btn" target="_blank"><span>Preview Resume</span>
+                            <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
+            <section class="container">
+                <div class="row" id="skillsContainer"></div>
+            </section>
+        </section>
+        <section class="education" id="education">
+            <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>     
+            <div class="box-container">
+                <article class="box">
+                    <div class="image">
+                        <img draggable="false" src="./images/algebra.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Frontend Developer - Adult education</h3>
+                        <p>Algebra University College</p>
+                        <h4>2022-2023</h4>
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="image">
+                        <img draggable="false" src="./images/foi_zgrada_bt.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Professional bachelor of business informatics</h3>
+                        <p>Faculty of organization and informatics</p>
+                        <h4>2015-2020</h4>
+                    </div>
+                </article>
+                <article class="box">
+                    <div class="image">
+                        <img draggable="false" src="./images/ess.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Computer tehnician</h3>
+                        <p>Secondary School of Electromechanical Engineering</p>
+                        <h4>2010-2014</h4>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="experience" id="experience">
+
+            <h2 class="heading"><i class="fas fa-briefcase"></i> Experience </h2>
+            <section class="timeline">
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Info3 d.o.o</h2>
+                        </div>
+                        <div class="desc">
+                            <h3>Web Developer</h3>
+                             <p>Sep 2022 - present</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Info3 d.o.o</h2>
+                        </div>
+                        <div class="desc">
+                            <h3>Web editor</h3>
+                            <p>Jul 2021 - Sep 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <div class="tag">
+                            <h2>Strela d.o.o</h2>
+                        </div>
+                        <div class="desc">
+                            <h3>Production worker</h3>
+                            <p>Jul 2017 - Aug 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container"></div>          
+            </section>
+        </section>
+        <section class="footer">
+            <div class="box-container">
+                <article class="box">
+                    <h3>Saša Čeko</h3>
+                    <p>Thank you for visiting.</p>
+                </article>
+                <article class="box">
+                    <h3>Quick links</h3>
+                    <a href="#home"><i class="fas fa-chevron-circle-right"></i> home</a>
+                    <a href="#about"><i class="fas fa-chevron-circle-right"></i> about</a>
+                    <a href="#skills"><i class="fas fa-chevron-circle-right"></i> skills</a>
+                    <a href="#education"><i class="fas fa-chevron-circle-right"></i> education</a>
+                    <a href="#experience"><i class="fas fa-chevron-circle-right"></i> experience</a>
+                </article>
+                <article class="box">
+                    <h3>Contact info</h3>
+                    <p><a href="mailto:ceko.sasa@gmail.com"><i class="fas fa-envelope" class="mail"></i>ceko.sasa@gmail.com</a></p>
+                    <p> <i class="fas fa-map-marked-alt"></i>Varaždin, Croatia</p>
+                    <div class="share">
+                        <a href="https://hr.linkedin.com/in/sa%C5%A1a-%C4%8Deko-441154182" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener"></a>
+                        <a href="https://github.com/sasaceko" class="fab fa-github" aria-label="GitHub" target="_blank" rel="noopener"></a>
+                    </div>
+                </article>
+            </div>
+          </section>
+    </main>
+    <script src="js/jquery-3.6.2.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="/js/particles.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

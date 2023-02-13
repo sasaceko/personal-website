@@ -455,37 +455,54 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .experience .experience {
+  .experience {
     min-height: 80vh;
   }
-  .experience .experience .timeline {
+  .experience .timeline {
     margin-top: 2rem;
   }
-  .experience .experience .timeline::after {
+  .experience .timeline::after {
     left: 31px;
   }
-  .experience .experience .container {
+  .experience .timeline .left::after {
+    left: 15px;
+  }
+  .experience .timeline .right {
+    left: 0%;
+  }
+  .experience .timeline .right::after {
+    left: 15px;
+  }
+  .experience .timeline .container {
     width: 100%;
     padding-left: 8rem;
     padding-right: 2rem;
   }
-  .experience .experience .container::after {
+  .experience .timeline .container::after {
     font-size: 2.2rem;
   }
-  .experience .experience .container::before {
+  .experience .timeline .container::before {
     left: 61px;
     border: medium solid #fc8c05;
     border-width: 10px 10px 10px 0;
     border-color: transparent #fc8c05 transparent transparent;
   }
-  .experience .experience .left::after {
-    left: 15px;
+  .experience .timeline .container:last-of-type {
+    display: none;
   }
-  .experience .experience .right {
-    left: 0%;
+  .experience .container {
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 2rem;
   }
-  .experience .experience .right::after {
-    left: 15px;
+  .experience .container::after {
+    font-size: 2.2rem;
+  }
+  .experience .container::before {
+    left: 61px;
+    border: medium solid #fc8c05;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fc8c05 transparent transparent;
   }
 }
 

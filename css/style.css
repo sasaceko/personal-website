@@ -633,6 +633,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 65px;
   padding-left: 10%;
   padding-right: 10%;
 }

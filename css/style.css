@@ -783,6 +783,13 @@ header .logo img {
   height: auto;
 }
 
+header #menu {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #18023f;
+  display: none;
+}
+
 header .navbar ul {
   list-style: none;
   display: -webkit-box;
@@ -814,6 +821,58 @@ header .navbar ul li a.active, header .navbar ul li a:hover {
   color: #011aff;
   border-bottom: 0.2rem solid #011aff;
   padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  header #menu {
+    display: block;
+  }
+  header #menu .fa-times {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  header .navbar {
+    position: fixed;
+    top: 6.5rem;
+    right: -120%;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #0e0f31;
+  }
+  header .navbar ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    padding: 1rem;
+  }
+  header .navbar ul li {
+    text-align: center;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    width: 26rem;
+  }
+  header .navbar ul li a {
+    display: block;
+    padding: 1rem;
+    text-align: left;
+    color: #fff;
+    font-size: 2rem;
+  }
+  header .navbar ul li a.active, header .navbar ul li a :hover {
+    padding: 1rem;
+    color: #fff;
+    border-radius: .5rem;
+    border-bottom: .5rem solid #011aff;
+  }
+  header .navbar.nav-toggle {
+    right: 0;
+  }
 }
 
 .social {

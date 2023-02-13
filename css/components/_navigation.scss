@@ -20,6 +20,13 @@ header {
         }
     }
 
+    #menu{
+        font-size: 3rem;
+        cursor: pointer;
+        color: rgb(24, 2, 63);
+        display: none;
+    }
+
     .navbar {
         ul {
             list-style: none;
@@ -48,3 +55,57 @@ header {
         }
     }
 }
+
+@media(max-width:768px){
+    header {
+
+        #menu{
+            display: block;
+
+            .fa-times{
+                transform: rotate(180deg);
+              }
+        }
+
+        .navbar{
+            position: fixed;
+            top: 6.5rem; right: -120%;
+            width: 100%;
+            height: 100%;
+            text-align: left;
+            align-items: flex-start;
+            background-color: #0e0f31;
+
+            ul {
+                flex-flow: column;
+                padding: 1rem;
+
+                li {
+                    text-align: center;
+                    width: 100%;
+                    margin: 1rem 0;
+                    border-radius: .5rem;
+                    width: 26rem;
+
+                    a {
+                        display: block;
+                        padding: 1rem;
+                        text-align: left;
+                        color: #fff;
+                        font-size: 2rem;
+
+                        &.active, :hover {
+                            padding: 1rem;
+                            color: #fff;
+                            border-radius: .5rem;
+                            border-bottom: .5rem solid #011aff;
+                        }
+                    }
+                }
+            }
+            &.nav-toggle{
+                right: 0;
+              }
+        }
+    } 
+  }
